@@ -5,7 +5,6 @@ public class Main {
     // write a method here
     public static void addValueByIndex(long[] arr, int i, long... args) {
         arr[i] += args[0];
-
     }
 
 
