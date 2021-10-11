@@ -8,5 +8,6 @@ class Application {
         // implement me
         System.out.println(this.name);
         Arrays.stream(args).forEach(System.out::println);
+
     }
 }
