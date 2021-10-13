@@ -8,6 +8,6 @@ class BinarySearch {
      */
     public static int callBinarySearch(int[] nums, int key) {
         // write your code here
-        int[] nums = 
+        return java.util.Arrays.binarySearch(nums, key);
     }
 }
