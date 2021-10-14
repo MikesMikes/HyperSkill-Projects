@@ -1,18 +1,34 @@
 package encryptdecrypt;
 
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String operation = scanner.nextLine();
-        char[] string = scanner.nextLine().toCharArray(); //abc vwx = fgh abc
-        int key = scanner.nextInt();
+        String mode = "";
+        int key = 0;
+        char[] data = null;
+        //[java, Main, -mode, enc, -key, 5, -data, Welcome to hyperskill!]
 
-        if (operation.equals("enc")) {
-            enc(string, key);
+        for (int i = 0; i < args.length - 1; i += 2) {
+            if (args[i].equals("-mode")) {
+                mode = args[i + 1];
+            }
+            if (args[i].equals("-key")) {
+                key = Integer.parseInt(args[i + 1]);
+            }
+            if (args[i].equals("-data")) {
+                data = args[i + 1].toCharArray();
+            }
+        }
+
+        if (data == null) {
+            System.out.println("");
+        } else if (mode.equals("dec")) {
+            dec(data, key);
         } else {
-            dec(string, key);
+            enc(data, key);
         }
 
     }
