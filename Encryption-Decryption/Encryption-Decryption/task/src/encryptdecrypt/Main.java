@@ -32,6 +32,7 @@ public class Main {
         }
 
     }
+    
 
     public static void enc(char[] arr, int key) {
         char[] chars = arr.clone();
