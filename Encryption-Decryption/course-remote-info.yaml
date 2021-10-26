@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/209884/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Mon, 18 Oct 2021 13:24:30 UTC
+update_date: Tue, 26 Oct 2021 16:29:09 UTC
 stages:
 - id: 245
   step: 5387
@@ -19,7 +19,7 @@ stages:
   is_completed: true
 - id: 249
   step: 5391
-  is_completed: false
+  is_completed: true
 - id: 250
   step: 5392
   is_completed: false
@@ -186,10 +186,10 @@ topics:
     theory_id: 3556
   - title: Encapsulating object creation
     theory_id: 3577
-  - title: Factory method
-    theory_id: 5761
   - title: Template method
     theory_id: 5155
+  - title: Factory method
+    theory_id: 5761
   - title: Abstract class
     theory_id: 3597
   - title: Abstract class vs interface
