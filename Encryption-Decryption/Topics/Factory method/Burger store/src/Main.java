@@ -1,7 +1,7 @@
 class TestDrive {
     public static void main(String[] args) throws InterruptedException {
         /* write your code here */
-        BurgerFactory store = new BurgerStore();
+        BurgerStore store = new BurgerStore();
         Burger chinese = store.orderBurger("Chinese");
         Burger american = store.orderBurger("American");
         Burger russian = store.orderBurger("Russian");
