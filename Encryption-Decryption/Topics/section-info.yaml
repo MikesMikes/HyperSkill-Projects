@@ -9,3 +9,5 @@ content:
 - Package
 - Command-line arguments
 - Encapsulating object creation (1)
+- Abstract class
+- Factory method
